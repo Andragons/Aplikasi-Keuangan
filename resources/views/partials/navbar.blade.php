@@ -24,7 +24,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="/transaksi/list">List Transaksi</a></li>
-              <li><a class="dropdown-item" href="/transaksi/add">Tambah Transaksi</a></li>
+              <li><a class="dropdown-item" href="/transaksi/create">Tambah Transaksi</a></li>
             </ul>
           </li>
         </ul>
