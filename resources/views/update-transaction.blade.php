@@ -11,12 +11,12 @@
                     @method('put')
                     
                     <div class="mb-3">
-                        <label for="transaction_type" class="form-label">Jenis Transaksi</label>
-                        <input type="text" class="form-control" id="transaction_type" name="transaction_type" value="{{ $transaction->transaction_type }}">
+                        <label for="jenis" class="form-label">Jenis Transaksi</label>
+                        <input type="text" class="form-control" id="jenis" name="jenis" value="{{ $transaction->transaction_type }}">
                     </div>
                     <div class="mb-3">
                         <label for="amount" class="form-label">Amount</label>
-                        <input type="text" class="form-control" id="amount" amount="amount" value="{{ $transaction->amount }}">
+                        <input type="text" class="form-control" id="amount" name="amount" value="{{ $transaction->amount }}">
                     </div>
                     <div class="mb-3">
                         <label for="description" class="form-label">Deskripsi</label>

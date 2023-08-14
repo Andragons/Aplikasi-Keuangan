@@ -55,7 +55,7 @@ class TransactionController extends Controller
     public function update(Request $request, $id)
     {
         $transaction = Transaction::find($id);
-        $transaction->transaction_type = $request->input('transaction_type');
+        $transaction->transaction_type = $request->input('jenis');
         $transaction->amount = $request->input('amount');
         $transaction->description = $request->input('description');
         $transaction->save();
@@ -68,6 +68,6 @@ class TransactionController extends Controller
         $transaction = Transaction::find($id);
         $transaction->delete();
 
-        return redirect('/transaksi/pemasukan')->with('success', 'List berhasil dihapus.');
+        return redirect('/transaksi/list')->with('success', 'List berhasil dihapus.');
     }
 }
